@@ -6,6 +6,7 @@ import '../widgets/search_bar_widget.dart';
 import '../widgets/popular_services.dart';
 import '../widgets/how_it_works.dart';
 import '../widgets/top_cleaners.dart';
+import '../widgets/promo_banner.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -28,6 +29,10 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 28),
 
               SearchBarWidget(),
+
+              SizedBox(height: 28),
+
+              PromoBanner(),
 
               SizedBox(height: 36),
 
