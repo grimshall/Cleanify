@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:mobile/features/home/models/service_data.dart';
 import 'package:mobile/shared/widgets/service_card.dart';
+import 'package:mobile/shared/widgets/section_header.dart';
 
 class PopularServices extends StatelessWidget {
   const PopularServices({super.key});
@@ -11,24 +12,9 @@ class PopularServices extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            const Text(
-              "Popular Services",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-
-            const Spacer(),
-
-            TextButton(
-              onPressed: () {},
-              child: const Text("View all"),
-            ),
-          ],
-        ),
+       const SectionHeader(
+        title: "Popular Services",
+      ),
 
         const SizedBox(height: 18),
 

@@ -13,9 +13,9 @@ class ServiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 110,
-      margin: const EdgeInsets.only(right: 14),
-      padding: const EdgeInsets.all(16),
+      width: 125,
+      margin: const EdgeInsets.only(right: 16),
+      padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
@@ -24,16 +24,30 @@ class ServiceCard extends StatelessWidget {
         ),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(icon, size: 34),
+          Container(
+            width: 54,
+            height: 54,
+            decoration: BoxDecoration(
+              color: const Color(0xFFF5F5F5),
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Icon(
+              icon,
+              size: 28,
+              color: Colors.black87,
+            ),
+          ),
 
-          const SizedBox(height: 14),
+          const Spacer(),
 
           Text(
             title,
-            textAlign: TextAlign.center,
             style: const TextStyle(
+              fontSize: 16,
               fontWeight: FontWeight.w600,
+              height: 1.3,
             ),
           ),
         ],
